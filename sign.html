@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="group w-75 mx-auto py-5">
+            <h1 class="desc">Smart Login System</h1>
+         <div class="mb-3">
+            <input class="form-control my-4 w-75 m-auto" id="UserInput" type="text" placeholder="Enter your Name">
+            <p class="d-none text-danger" id="userNameAlert">include at least 3 letters strating with a capital letter</p>
+         </div>
+         <div class="mb-3">
+            <input class="form-control my-4 w-75 m-auto" id="emailInput" type="email" placeholder="Enter your Email">
+            <p class="d-none text-danger" id="userEmailAlert">name@example.com</p>
+
+         </div>
+         <div class="mb-3">
+            <input class="form-control my-4 w-75 m-auto" id="passInput" type="password" placeholder="Enter your Password">
+            <p class="d-none text-danger" id="userPassAlert">include at least 8 letters</p>
+         </div>
+           <p class="d-none text-center text-success" id="confirm_Msg">success</p>
+           <p class="d-none text-center text-danger mb-0" id="msgExist">this account already exist! try another</p>
+           <p class="d-none text-center text-danger mb-0" id="faildSigning">faild! try again</p>
+            <button class="btn btn-outline-info w-75 my-4 m-auto" id="signUpBtn" onclick="signUp()">Sign UP</button>
+            <p class="text-center text-white m-auto">You have an account?<a class="text-white text-decoration-none" href="index.html">Signin</a></p>
+<a href="index.html" class="d-none btn btn-outline-success text-white w-25 m-auto" id="signIn">sign in</a>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
